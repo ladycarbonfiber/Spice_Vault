@@ -1,5 +1,6 @@
 defmodule SpiceVault.Accounts.User do
   use Ecto.Schema
+
   import Ecto.Changeset
 
   schema "users" do
@@ -7,6 +8,7 @@ defmodule SpiceVault.Accounts.User do
     field :password, :string, virtual: true, redact: true
     field :hashed_password, :string, redact: true
     field :confirmed_at, :naive_datetime
+    field :group, :string
 
     timestamps()
   end
