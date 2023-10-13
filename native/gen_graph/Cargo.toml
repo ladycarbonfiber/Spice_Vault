@@ -10,5 +10,5 @@ path = "src/lib.rs"
 crate-type = ["cdylib"]
 
 [dependencies]
-graphviz-rust = "0.6.6"
+layout-rs = "0.1.1"
 rustler = "0.29.1"
